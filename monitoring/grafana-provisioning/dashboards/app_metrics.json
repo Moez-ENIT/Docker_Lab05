@@ -1,0 +1,14 @@
+{
+  "annotations": {"list":[]},
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Request Count",
+      "targets": [
+        {"expr": "app_requests_total", "format": "time_series"}
+      ]
+    }
+  ],
+  "schemaVersion": 16,
+  "title": "App Metrics"
+}

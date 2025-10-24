@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Compose Lab Frontend</title>
+  </head>
+  <body>
+    <h1>Advanced Compose Lab</h1>
+    <div id="state">loading...</div>
+    <script>
+      async function load() {
+        try {
+          const res = await fetch('/api');
+          const j = await res.json();
+          document.getElementById('state').innerText = JSON.stringify(j, null, 2);
+        } catch (e) {
+          document.getElementById('state').innerText = 'error: ' + e;
+        }
+      }
+      load();
+    </script>
+  </body>
+</html>
