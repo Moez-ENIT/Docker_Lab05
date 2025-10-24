@@ -31,5 +31,7 @@ tandis que les métriques sont collectées par **Prometheus** et visualisées da
 
 ## Travail demandé
 > [!IMPORTANT]
-> Completer les fichiers **backend/Dockerfile** et **docker-compose.yml** pour que l'application fonctionne correctement.
+> Completer les fichiers **docker-compose.yml** pour que l'application fonctionne correctement.
+> Les donnees sensibles (login et password) ne doivent pas apparaitre enn clair dans le fichier docker-compose.yml.
+> Si les fichiers fournis contiennent des erreurs il faut les corriger.
 > Faire le **push** du projet.
